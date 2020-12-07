@@ -1,0 +1,79 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes books {
+    0{
+        background-position: 0;
+    }
+    100%{
+        background-position: 600px; 
+    }
+}
+
+.preloader{
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+    .preloaderAnim{
+        width: 100%
+    }   
+        .upshelf{
+            display: flex;
+        }
+            .leftshelf{
+                width: 10px;
+                height: 50px;
+                background-color: #743f13;
+            }
+            .booksloader{
+                width: 100%;
+                height: 50px;
+                background-image: linear-gradient(90deg,
+                    #8b1450 7%,
+                    #00328f 7%,
+                    #00328f 16%,
+                    #f2d200 16%,
+                    #f2d200 23%,
+                    #000000 23%,
+                    #000000 29%,
+                    #dfaa87 29%,
+                    #dfaa87 35%,
+                    #77cc66 35%,
+                    #77cc66 43%,
+                    #ffffff 43%,
+                    #ffffff 47%,
+                    #f3a20c 47%,
+                    #f3a20c 55%,
+                    #105e00 55%,
+                    #105e00 59%,
+                    #009c82 59%,
+                    #009c82 67%,
+                    #00328f 67%,
+                    #00328f 73%,
+                    #8b1450 73%,
+                    #8b1450 80%,
+                    #dfaa87 80%,
+                    #dfaa87 87%,
+                    #572a00 87%,
+                    #572a00 93%,
+                    #ffffff 93%);
+                animation: books 60s linear infinite;
+            }
+        .shelf{
+            width: 100%;
+            height: 10px;
+            background-color: #743f13;
+        }
+    .preloaderText{
+        display: flex;
+        justify-content: center;
+        padding: 0.5em;
+    }
